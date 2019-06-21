@@ -166,10 +166,10 @@ textarea{overflow:auto}
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar{position:relative;height:2px;width:100%;background:#cdcdcd}
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{position:absolute;left:0;top:0;bottom:0;background:#aaa;height:2px;transition:all .5s ease}
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{position:absolute;left:0;top:0;bottom:0;height:2px}
-.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{position:absolute;top:0;right:5px;margin-top:-4px;margin-right:-10px;height:10px;width:10px;border-radius:50%;cursor:url(../images/pointer.cur),auto;transition:all .3s ease-in-out;-webkit-transform:scale(0);transform:scale(0)}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{position:absolute;top:0;right:5px;margin-top:-4px;margin-right:-10px;height:10px;width:10px;border-radius:50%;cursor:pointer;transition:all .3s ease-in-out;-webkit-transform:scale(0);transform:scale(0)}
 .aplayer .aplayer-info .aplayer-controller .aplayer-time{position:relative;right:0;bottom:4px;height:17px;color:#999;font-size:11px;padding-left:7px}
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-time-inner{vertical-align:middle}
-.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon{cursor:url(../images/pointer.cur),auto;transition:all .2s ease}
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon{cursor:urlpointer;transition:all .2s ease}
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#666}
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-loop{margin-right:2px}
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path{fill:#000}
@@ -189,7 +189,7 @@ textarea{overflow:auto}
 .aplayer .aplayer-lrc p{font-size:12px!important;color:#666!important;line-height:16px!important;height:16px!important;padding:0!important;margin:0!important;transition:all .5s ease-out;opacity:.4;overflow:hidden}
 .aplayer .aplayer-lrc p.aplayer-lrc-current{opacity:1;overflow:visible;height:auto!important;min-height:16px}
 .aplayer .aplayer-lrc.aplayer-lrc-hide{display:none}
-.aplayer .aplayer-lrc .aplayer-lrc-contents{width:100%;transition:all .5s ease-out;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;cursor:url(../images/cursor.cur),default}
+.aplayer .aplayer-lrc .aplayer-lrc-contents{width:100%;transition:all .5s ease-out;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;cursor:default}
 .aplayer .aplayer-list{overflow:auto;transition:all .5s ease;will-change:height;display:none;overflow:hidden}
 .aplayer .aplayer-list.aplayer-list-hide{max-height:0!important}
 .aplayer .aplayer-list ol{list-style-type:none;margin:0;padding:0;overflow-y:auto}
