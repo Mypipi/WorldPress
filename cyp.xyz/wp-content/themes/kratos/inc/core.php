@@ -77,7 +77,7 @@ function kratos_excerpt_more($more){return '……';}
 add_filter('excerpt_more','kratos_excerpt_more');
 //Load scripts
 function kratos_theme_scripts(){
-    $url1 = 'https://cdn.jsdelivr.net/gh/Mypipi/WorldPress@v1.3';
+    $url1 = 'https://cdn.jsdelivr.net/gh/Mypipi/WorldPress@'.KRATOS_VERSION;
     $url2 = get_bloginfo('template_directory');
     if(kratos_option('js_out')) $jsdir = $url1; else $jsdir = $url2;
     if(kratos_option('css_out')) $cssdir = $url1; else $cssdir = $url2;
@@ -86,15 +86,15 @@ function kratos_theme_scripts(){
     if(kratos_option('jq_url')) $jqdir = kratos_option('jq_url'); else $jqdir = $url2.'/cyp.xyz/wp-content/themes/kratos/static/js/jquery.min.js';
     if(!is_admin()){
         wp_enqueue_style('fontawe',$fadir,array(),'4.7.0');
-        wp_enqueue_style('kratos',$cssdir.'/cyp.xyz/wp-content/themes/kratos/static/css/kratos.min.css',array(),'v1.3');
+        wp_enqueue_style('kratos',$cssdir.'/cyp.xyz/wp-content/themes/kratos/static/css/kratos.min.css',array(),KRATOS_VERSION);
         wp_enqueue_script('theme-jq',$jqdir,array(),'2.1.4');
-        wp_enqueue_script('theme',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/theme.min.js',array(),'v1.3');
-        wp_enqueue_script('kratos',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/kratos.js',array(),'v1.3');
-        if(kratos_option('page_pjax')) wp_enqueue_script('pjax',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/pjax.js',array(),'v1.3');
+        wp_enqueue_script('theme',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/theme.min.js',array(),KRATOS_VERSION);
+        wp_enqueue_script('kratos',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/kratos.js',array(),KRATOS_VERSION);
+        if(kratos_option('page_pjax')) wp_enqueue_script('pjax',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/pjax.js',array(),KRATOS_VERSION);
     }
     if(kratos_option('site_girl')&&!wp_is_mobile()){
         wp_enqueue_script('live2d',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/live2d.js',array(),'l2d');
-        wp_enqueue_script('waifu',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/waifu-tips.js',array(),'1.3');
+        wp_enqueue_script('waifu',$jsdir.'/cyp.xyz/wp-content/themes/kratos/static/js/waifu-tips.js',array(),KRATOS_VERSION);
     }
     if(kratos_option('site_sa')&&!wp_is_mobile()){if(kratos_option('head_mode')=='pic') $site_sa_h = 61; else $site_sa_h = 103;}
     $d2kratos = array(
