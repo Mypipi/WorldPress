@@ -385,6 +385,7 @@ if(xb.copy) document.body.oncopy=function(){alert('已复制所选内容。请�
 window.onload = function(){
     var now = new Date().getTime();
     var page_load_time = now-performance.timing.navigationStart;
-    //console.clear();
+    console.clear();
+    console.log('哎哟~~，你打开了什么？想干什么坏事就干吧，反正我阻止不了你，手动狗头');
     console.log('%c页面加载完毕消耗了'+Math.round(performance.now()*100)/100+'ms','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
 };
